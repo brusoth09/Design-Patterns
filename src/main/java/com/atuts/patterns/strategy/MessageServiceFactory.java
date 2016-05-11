@@ -4,7 +4,7 @@ package com.atuts.patterns.strategy;
  * Factory design pattern to get preferred instance of message service.
  *
  */
-public class MessageServiceFactory {
+class MessageServiceFactory {
 
     /**
      * Method return message service instance based on input

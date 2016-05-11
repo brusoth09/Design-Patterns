@@ -4,7 +4,7 @@ package com.atuts.patterns.strategy;
  * Sms message system to send sms
  *
  */
-public class SmsMessagingSystem implements MessageService {
+class SmsMessagingSystem implements MessageService {
 
     /**
      * Send sms messages

@@ -1,11 +1,7 @@
 package com.atuts.main;
 
-import com.atuts.patterns.strategy.MessageService;
-import com.atuts.patterns.strategy.MessageServiceFactory;
-import com.atuts.patterns.strategy.UI;
-import com.atuts.patterns.strategy.UIConsole;
-
-import java.util.Scanner;
+import com.atuts.patterns.strategy.StrategyPattern;
+import com.atuts.patterns.template.TemplatePattern;
 
 /**
  * Explains Each and every design patterns
@@ -14,7 +10,8 @@ import java.util.Scanner;
 public class DesignPatternExamples {
     public static void main(String[] args) {
         DesignPatternExamples examples = new DesignPatternExamples();
-        examples.showStrategyDesignPattern();
+        //examples.showStrategyDesignPattern();
+        examples.showTemplateDesignPattern();
     }
 
     /**
@@ -22,11 +19,10 @@ public class DesignPatternExamples {
      *
      */
     private void showStrategyDesignPattern() {
-        System.out.print("Please enter preferred messaging system (sms,email):");
-        String preference = (new Scanner(System.in)).nextLine();
-        MessageService messageService = MessageServiceFactory.getMessageService(preference);
+        new StrategyPattern().testPattern();
+    }
 
-        UI userInterface = new UIConsole(messageService);
-        userInterface.sendMessage();
+    private void showTemplateDesignPattern() {
+        new TemplatePattern().testPattern();
     }
 }

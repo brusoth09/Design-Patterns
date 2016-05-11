@@ -1,9 +1,14 @@
 package com.atuts.patterns.strategy;
 
 /**
- * Created by brusoth on 5/10/16.
+ * Class to handle email message sending.
+ *
  */
-public class EmailMessagingSystem implements MessageService {
+class EmailMessagingSystem implements MessageService {
+    /**
+     * Send email
+     *
+     */
     public void send() {
         System.out.println("Getting senders");
         System.out.println("Getting Subject");
