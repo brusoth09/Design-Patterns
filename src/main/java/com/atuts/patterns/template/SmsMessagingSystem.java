@@ -1,9 +1,10 @@
 package com.atuts.patterns.template;
 
 /**
- * Created by brusoth on 5/11/16.
+ * SMS messaging system responsible for sending sms
+ *
  */
-public class SmsMessagingSystem extends MessagingSystem {
+class SmsMessagingSystem extends MessagingSystem {
     public SmsMessagingSystem(UI ui) {
 
     }

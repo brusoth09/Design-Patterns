@@ -1,9 +1,10 @@
 package com.atuts.patterns.template;
 
 /**
- * Created by brusoth on 5/11/16.
+ * Email messaging system
+ *
  */
-public class EmailMessagingSystem extends MessagingSystem {
+class EmailMessagingSystem extends MessagingSystem {
     public EmailMessagingSystem(UI ui, Login login) {
         super();
     }

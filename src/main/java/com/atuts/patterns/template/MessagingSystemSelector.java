@@ -6,7 +6,7 @@ import java.util.List;
  * Selector design Pattern to get selector
  *
  */
-public class MessagingSystemSelector {
+class MessagingSystemSelector {
     private final List<MessagingSystem> messagingSystems;
 
     public MessagingSystemSelector(List<MessagingSystem> messagingSystems) {
