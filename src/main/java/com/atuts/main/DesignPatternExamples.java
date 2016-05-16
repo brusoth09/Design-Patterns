@@ -2,6 +2,8 @@ package com.atuts.main;
 
 import com.atuts.patterns.factory.FactoryPattern;
 import com.atuts.patterns.observer.generic.GenericObserverPattern;
+import com.atuts.patterns.observer.java.JavaObserverPattern;
+import com.atuts.patterns.observer.pull.PullObserverPattern;
 import com.atuts.patterns.strategy.StrategyPattern;
 import com.atuts.patterns.template.TemplatePattern;
 
@@ -14,13 +16,25 @@ public class DesignPatternExamples {
         //examples.showStrategyDesignPattern();
         //examples.showTemplateDesignPattern();
         //examples.showFactoryDesignPattern();
-        examples.showGenericObserver();
+        //examples.showGenericObserverPattern();
+        //examples.showPullObserverPattern();
+        examples.showJavaObserverPattern();
     }
+
+    /**
+     * Call java observer pattern
+     */
+    private void showJavaObserverPattern() {    new JavaObserverPattern().testPattern(); }
+
+    /**
+     * Call pull observer pattern
+     */
+    private void showPullObserverPattern() {    new PullObserverPattern().testPattern(); }
 
     /**
      * Call generic observer pattern
      */
-    private void showGenericObserver() {
+    private void showGenericObserverPattern() {
         new GenericObserverPattern().testPattern();
     }
 
