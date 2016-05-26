@@ -1,6 +1,7 @@
 package com.atuts.main;
 
 import com.atuts.patterns.factory.FactoryPattern;
+import com.atuts.patterns.mediator.mediator.MediatorPattern;
 import com.atuts.patterns.observer.generic.GenericObserverPattern;
 import com.atuts.patterns.observer.java.JavaObserverPattern;
 import com.atuts.patterns.observer.pull.PullObserverPattern;
@@ -18,7 +19,8 @@ public class DesignPatternExamples {
         //examples.showFactoryDesignPattern();
         //examples.showGenericObserverPattern();
         //examples.showPullObserverPattern();
-        examples.showJavaObserverPattern();
+        //examples.showJavaObserverPattern();
+        examples.showMediatorDesignPattern();
     }
 
     /**
@@ -58,4 +60,9 @@ public class DesignPatternExamples {
     private void showFactoryDesignPattern() {
         new FactoryPattern().testPattern();
     }
+
+    /**
+     * call
+     */
+    private void showMediatorDesignPattern(){ new MediatorPattern().testPattern();}
 }

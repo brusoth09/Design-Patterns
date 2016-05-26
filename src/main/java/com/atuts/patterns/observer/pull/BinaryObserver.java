@@ -5,7 +5,6 @@ package com.atuts.patterns.observer.pull;
  *
  */
 class BinaryObserver implements Observer {
-
     public BinaryObserver(Subject subject) {
         subject.addObserver(this);
     }

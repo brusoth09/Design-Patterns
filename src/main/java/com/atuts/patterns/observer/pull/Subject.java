@@ -28,7 +28,7 @@ class Subject {
     public void notifyAllObservers(){
         for(Observer observer:observerList){
             observer.getState();
-            observer.getValue(state);
+            //observer.getValue(state);
         }
     }
 }
