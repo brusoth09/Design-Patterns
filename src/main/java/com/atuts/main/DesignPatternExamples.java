@@ -1,5 +1,6 @@
 package com.atuts.main;
 
+import com.atuts.patterns.chain_of_responsibility.CORDesignPattern;
 import com.atuts.patterns.factory.FactoryPattern;
 import com.atuts.patterns.mediator.mediator.MediatorPattern;
 import com.atuts.patterns.observer.generic.GenericObserverPattern;
@@ -20,7 +21,8 @@ public class DesignPatternExamples {
         //examples.showGenericObserverPattern();
         //examples.showPullObserverPattern();
         //examples.showJavaObserverPattern();
-        examples.showMediatorDesignPattern();
+        //examples.showMediatorDesignPattern();
+        examples.showCORDesignPattern();
     }
 
     /**
@@ -62,7 +64,12 @@ public class DesignPatternExamples {
     }
 
     /**
-     * call
+     * call mediator design pattern
      */
     private void showMediatorDesignPattern(){ new MediatorPattern().testPattern();}
+
+    /**
+     * call chain of responsibility pattern
+     */
+    private void showCORDesignPattern(){    new CORDesignPattern().testPattern();}
 }
